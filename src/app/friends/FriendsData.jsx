@@ -1,5 +1,5 @@
 
-import FriendsCard from './FriendsCard';
+import FriendsCard from '../../components/FriendsCard';
 
 const FriendsData =async () => {
     const res = await fetch('http://localhost:3000/friends.json');

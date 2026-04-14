@@ -1,4 +1,4 @@
-import FriendsData from "@/components/FriendsData";
+import FriendsData from "@/app/friends/FriendsData";
 import { FaPlus } from "react-icons/fa";
 
 export default function Home() {
@@ -33,7 +33,7 @@ export default function Home() {
       <hr className="my-20 text-gray-200 mx-65" />
 
       <div>
-        <h2 className="text-xl font-bold mb-5 mx-65">Your Friends</h2>
+        <h2 className="text-xl font-bold mx-65">Your Friends</h2>
         
 
           
