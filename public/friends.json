@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "name": "David Kim",
+    "picture": "https://i.ibb.co.com/nNLyCw1s/mitchell-luo-ymo-y-C-N-2o-unsplash.jpg",
+    "email": "david.kim22@gmail.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "We studied CSE together at university. Used to code late nights and grab tea at campus stalls.",
+    "goal": 14,
+    "next_due_date": "2026-04-01"
+  },
+  {
+    "id": 2,
+    "name": "Emma Wilson",
+    "picture": "https://i.ibb.co.com/WZhjCjd/courtney-cook-TSZo17r3m0s-unsplash.jpg",
+    "email": "emma.wilson121@gmail.com",
+    "days_since_contact": 10,
+    "status": "almost due",
+    "tags": ["work", "teammate"],
+    "bio": "Colleague from my first internship. Great at UI design and always shares helpful career advice.",
+    "goal": 14,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 3,
+    "name": "Lisa Nakamura",
+    "picture": "https://i.ibb.co.com/Fkd5tkpS/microsoft-365-7m-Bict-B-urk-unsplash.jpg",
+    "email": "lisa.nakamura@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["school", "friend"],
+    "bio": "School friend who still joins online gaming sessions every weekend.",
+    "goal": 14,
+    "next_due_date": "2026-04-23"
+  },
+  {
+    "id": 4,
+    "name": "James Lee",
+    "picture": "https://i.ibb.co.com/n8gkX5V1/gregory-hayes-h5cd51-KXm-RQ-unsplash.jpg",
+    "email": "james.lee78@gmail.com",
+    "days_since_contact": 30,
+    "status": "overdue",
+    "tags": ["family friend"],
+    "bio": "Family friend who helped me prepare for my university admission exams.",
+    "goal": 21,
+    "next_due_date": "2026-03-25"
+  },
+  {
+    "id": 5,
+    "name": "Kevin Seward",
+    "picture": "https://i.ibb.co.com/jkNzvTb8/samuel-raita-Ri-Dx-Dg-Hg7pw-unsplash.jpg",
+    "email": "kevin.seward09@gmail.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["gym", "fitness"],
+    "bio": "Met at the gym. Keeps me motivated with workout routines and diet tips.",
+    "goal": 14,
+    "next_due_date": "2026-04-16"
+  },
+  {
+    "id": 6,
+    "name": "Rio Wang",
+    "picture": "https://i.ibb.co.com/sdBKrRm8/joseph-gonzalez-i-Fg-Rcq-Hznqg-unsplash.jpg",
+    "email": "rio.wang19@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["university", "project partner"],
+    "bio": "Worked together on multiple academic projects. Very organized and hardworking.",
+    "goal": 10,
+    "next_due_date": "2026-04-21"
+  },
+  {
+    "id": 7,
+    "name": "Fernandez Quash",
+    "picture": "https://i.ibb.co.com/GBDydSD/christian-buehner-DIt-Ylc26z-VI-unsplash.jpg",
+    "email": "fernandez.quash@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["travel", "adventure"],
+    "bio": "Travel buddy for trips to Spain and Italy. Always plans exciting adventures.",
+    "goal": 14,
+    "next_due_date": "2026-04-05"
+  },
+  {
+    "id": 8,
+    "name": "David Garcia",
+    "picture": "https://i.ibb.co.com/VYVrTLT5/john-mark-arnold-xb-Ba-Oa-dd5-I-unsplash.jpg",
+    "email": "david.garcia007@gmail.com",
+    "days_since_contact": 7,
+    "status": "on-track",
+    "tags": ["neighbor", "close friend"],
+    "bio": "Grew up in the same neighborhood. We still catch up over evening walks.",
+    "goal": 14,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 9,
+    "name": "Selim Sultan",
+    "picture": "https://i.ibb.co.com/bt1SpX3/ian-dooley-d1-UPki-Fd04-A-unsplash.jpg",
+    "email": "selim.sultan@gmail.com",
+    "days_since_contact": 20,
+    "status": "on-track",
+    "tags": ["travel", "adventure"],
+    "bio": "Travel buddy for trips to Kashmir and Tibet. Always plans exciting adventures.",
+    "goal": 14,
+    "next_due_date": "2026-05-25"
+  }
+]
