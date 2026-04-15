@@ -1,4 +1,4 @@
-import FriendsData from "@/app/friends/FriendsData";
+import FriendsData from "@/app/friends/page";
 import { FaPlus } from "react-icons/fa";
 
 export default function Home() {
