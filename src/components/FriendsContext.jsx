@@ -11,7 +11,7 @@ const FriendsProvider = ({ children }) => {
     const handleCall = (callData) => {
     setCallStatus((previousData) => [...previousData, callData]);
     toast.success(`Called successful with ${callData.name}`);
-};
+    };
 
 
     const [messageStatus, setMessageStatus] = useState([]);
@@ -19,7 +19,14 @@ const FriendsProvider = ({ children }) => {
     const handleMessage = (messageData) => {
     setMessageStatus((previousData) => [...previousData, messageData]);
     toast.success(`Message sent successful with ${messageData.name}`);
-};
+    };
+
+    const [videoCallStatus, setVideoCallStatus] = useState([]);
+
+    const handleVideoCall = (videoCallData) => {
+    setVideoCallStatus((previousData) => [...previousData, videoCallData]);
+    toast.success(`Video call successful with ${videoCallData.name}`);
+    };
 
 
     const data = {
@@ -28,7 +35,10 @@ const FriendsProvider = ({ children }) => {
         handleCall,
         messageStatus,
         setMessageStatus,
-        handleMessage
+        handleMessage,
+        videoCallStatus,
+        setVideoCallStatus,
+        handleVideoCall
     }
 
     return <FriendsContext.Provider value={data}>

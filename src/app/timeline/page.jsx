@@ -2,10 +2,11 @@
 import { FriendsContext } from "@/components/FriendsContext";
 import TimelineCallCard from "@/components/TimelineCallCard";
 import TimelineMessageCard from "@/components/TimelineMessageCard";
+import TimelineVideoCallCard from "@/components/TimelineVideoCallCard";
 import { useContext } from "react";
 
 const TimelinePage = () => {
-    const {callStatus, messageStatus} = useContext(FriendsContext);
+    const {callStatus, messageStatus, videoCallStatus} = useContext(FriendsContext);
     return (
         <div className="mx-65 mt-20">
         <h1 className="text-4xl font-bold mb-5">Timeline</h1>
@@ -22,6 +23,9 @@ const TimelinePage = () => {
 
         {messageStatus.map((item, index) => (
             <TimelineMessageCard key={index} data={item} />
+        ))}
+        {videoCallStatus.map((item, index) => (
+            <TimelineVideoCallCard key={index} data={item} />
         ))}
     </div>
     );
