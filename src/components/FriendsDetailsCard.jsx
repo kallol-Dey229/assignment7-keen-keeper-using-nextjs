@@ -9,7 +9,7 @@ import { FriendsContext } from './FriendsContext';
 
 const FriendsDetailsCard = ({ friend }) => {
     const { id, name, picture, days_since_contact, tags, status, bio, email, goal, next_due_date } = friend;
-    const { handleCall } = useContext(FriendsContext);
+    const { handleCall, handleMessage } = useContext(FriendsContext);
     return (
         <div className="grid grid-cols-3 mt-20 gap-10 mx-65 h-full">
             <div className="space-y-2 col-span-1 left ">
@@ -93,7 +93,14 @@ const FriendsDetailsCard = ({ friend }) => {
                                 <p className="flex justify-center mb-4 text-2xl"><LuPhoneCall /></p>
                                 <h2>Call</h2>
                             </div>
-                            <div className="bg-base-100 shadow-md p-4 text-center">
+                            <div 
+                            onClick={() => handleMessage({
+                                id,
+                                name,
+                                type: "Text",
+                                time: new Date().toLocaleString()
+                            })}
+                            className="bg-base-100 shadow-md p-4 text-center">
                                 <p className="flex justify-center mb-4 text-2xl"><MdOutlineTextsms /></p>
                                 <h2>Text</h2>
                             </div>
