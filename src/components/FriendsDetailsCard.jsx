@@ -89,7 +89,7 @@ const FriendsDetailsCard = ({ friend }) => {
                                 type: "Call",
                                 time: new Date().toLocaleString()
                             })}
-                             className="bg-base-100 shadow-md p-4 text-center">
+                             className="bg-base-100 shadow-md p-4 text-center hover:cursor-pointer">
                                 <p className="flex justify-center mb-4 text-2xl"><LuPhoneCall /></p>
                                 <h2>Call</h2>
                             </div>
@@ -100,7 +100,7 @@ const FriendsDetailsCard = ({ friend }) => {
                                 type: "Text",
                                 time: new Date().toLocaleString()
                             })}
-                            className="bg-base-100 shadow-md p-4 text-center">
+                            className="bg-base-100 shadow-md p-4 text-center hover:cursor-pointer">
                                 <p className="flex justify-center mb-4 text-2xl"><MdOutlineTextsms /></p>
                                 <h2>Text</h2>
                             </div>
@@ -111,8 +111,8 @@ const FriendsDetailsCard = ({ friend }) => {
                                 type: "Video Call",
                                 time: new Date().toLocaleString()
                             })}
-                            className="bg-base-100 shadow-md p-4 text-center">
-                                <p className="flex justify-center mb-4 text-2xl"><LuVideo /></p>
+                            className="bg-base-100 shadow-md p-4 text-center hover:cursor-pointer">
+                                <p className="flex justify-center mb-4 text-2xl "><LuVideo /></p>
                                 <h2>Video Call</h2>
                             </div>
                         </div>
