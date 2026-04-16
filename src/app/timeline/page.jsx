@@ -31,6 +31,13 @@ const TimelinePage = () => {
                             : ""
             ))}
 
+            {callStatus.length === 0 && messageStatus.length === 0 && videoCallStatus.length === 0 ? (
+                <div className="border border-gray-200 shadow-sm mt-20 py-40 rounded-lg mb-20">
+                    <p className="text-gray-500 flex justify-center items-center ">No interactions yet. Start connecting with your friends!</p>
+                </div>
+            ) : ""}
+
+
         {callStatus.map((item, index) => (
             <TimelineCallCard key={index} data={item} />
         ))}
