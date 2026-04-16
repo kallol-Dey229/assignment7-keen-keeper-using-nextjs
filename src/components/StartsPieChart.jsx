@@ -15,7 +15,7 @@ const StartsPieChart = () => {
 
     return (
         <div className="bg-base-100 shadow-sm p-6 rounded-lg w-full mt-10">
-            <h2 className="mb-4 font-semibold text-lg">By Interaction Type</h2>
+            <h2 className="mb-4 font-semibold text-sm md:text-lg">By Interaction Type</h2>
 
             <div className="w-full h-75">
                 <ResponsiveContainer width="100%" height="100%">

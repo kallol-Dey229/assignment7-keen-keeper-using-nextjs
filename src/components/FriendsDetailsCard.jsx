@@ -11,8 +11,8 @@ const FriendsDetailsCard = ({ friend }) => {
     const { id, name, picture, days_since_contact, tags, status, bio, email, goal, next_due_date } = friend;
     const { handleCall, handleMessage, handleVideoCall } = useContext(FriendsContext);
     return (
-        <div className="grid grid-cols-3 mt-20 gap-10 mx-65 h-full">
-            <div className="space-y-2 col-span-1 left ">
+        <div className="grid grid-cols-1 md:grid-cols-3 mt-20 gap-10 mx-20 md:mx-30 lg:mx-65 h-full">
+            <div className="space-y-2 col-span-1 left">
                 <div className="card bg-base-100 shadow-sm">
                     <figure className="px-10 pt-10">
                         <Image
@@ -24,17 +24,17 @@ const FriendsDetailsCard = ({ friend }) => {
                             unoptimized
                         />
                     </figure>
-                    <div className="card-body items-center text-center">
+                    <div className="card-body md:items-center md:text-center">
                         <h2 className="card-title">{name}</h2>
 
-                        <p className={`text-white font-semibold px-4 py-1 flex items-center rounded-full ${status === "overdue" ? "bg-red-700" :
+                        <p className={`text-white text-center font-semibold px-2 md:px-4 md:py-1 md:flex items-center rounded-full ${status === "overdue" ? "bg-red-700" :
                             status === "almost due" ? "bg-yellow-700" :
                                 "bg-green-700"
                             }`}>
                             {status}
                         </p>
 
-                        <p className="flex gap-2">{tags.map((tag) => (
+                        <p className="flex justify-center gap-2">{tags.map((tag) => (
                             <span key={tag} className="bg-green-100 text-[11px] font-semibold text-green-700 px-2 py-1 flex  items-center rounded-full">
                                 {tag}
                             </span>
@@ -54,7 +54,7 @@ const FriendsDetailsCard = ({ friend }) => {
                 <p className="bg-base-100 shadow-sm p-2 flex items-center justify-center gap-1 font-bold text-red-500"><LuTrash /> Delete</p>
             </div>
 
-            <div className="right col-span-2 space-y-13">
+            <div className="right col-span-2 space-y-13 mt-20 md:mt-0">
                 <div className="grid grid-cols-3 gap-3">
                     <div className="bg-base-100 shadow-sm p-5 text-center">
                         <h2 className="font-bold text-green-950 text-2xl">{days_since_contact}</h2>

@@ -8,7 +8,7 @@ import { useContext } from "react";
 const TimelinePage = () => {
     const {callStatus, messageStatus, videoCallStatus, filteredTimeline, setFilter, filter} = useContext(FriendsContext);
     return (
-        <div className="mx-65 mt-20">
+        <div className="mx-5 md:mx-30 lg:mx-65 mt-20">
         <h1 className="text-4xl font-bold mb-5">Timeline</h1>
         <select
                 value={filter}
