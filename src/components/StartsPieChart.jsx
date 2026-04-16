@@ -1,18 +1,16 @@
 "use client";
 
 import React, { useContext } from 'react';
-import { Pie, PieChart, Cell, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { Pie, PieChart, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { FriendsContext } from './FriendsContext';
-
-const COLORS = ["#14532d", "#7c3aed", "#22c55e"];
 
 const StartsPieChart = () => {
     const { callStatus, messageStatus, videoCallStatus = [] } = useContext(FriendsContext);
 
     const data = [
-        { name: "Call", value: callStatus.length },
-        { name: "Text", value: messageStatus.length },
-        { name: "Video Call", value: videoCallStatus.length },
+        { name: "Call", value: callStatus.length, fill: "#14532d" },
+        { name: "Text", value: messageStatus.length, fill: "#7c3aed" },
+        { name: "Video Call", value: videoCallStatus.length, fill: "#22c55e" },
     ];
 
     return (
@@ -28,14 +26,10 @@ const StartsPieChart = () => {
                             outerRadius={100}
                             paddingAngle={4}
                             dataKey="value"
-                        >
-                            {data.map((entry, index) => (
-                                <Cell key={index} fill={COLORS[index]} />
-                            ))}
-                        </Pie>
+                        />
 
                         <Tooltip />
-                        <Legend iconType="circle"/>
+                        <Legend iconType="circle" />
                     </PieChart>
                 </ResponsiveContainer>
             </div>
