@@ -11,7 +11,7 @@ const FriendsDetailsCard = ({ friend }) => {
     const { id, name, picture, days_since_contact, tags, status, bio, email, goal, next_due_date } = friend;
     const { handleCall, handleMessage, handleVideoCall } = useContext(FriendsContext);
     return (
-        <div className="grid grid-cols-1 md:grid-cols-3 mt-20 gap-10 mx-20 md:mx-30 lg:mx-65 h-full">
+        <div className="grid grid-cols-1 md:grid-cols-3 mt-20 gap-10 mx-5 md:mx-30 lg:mx-65 h-full">
             <div className="space-y-2 col-span-1 left">
                 <div className="card bg-base-100 shadow-sm">
                     <figure className="px-10 pt-10">
@@ -41,7 +41,7 @@ const FriendsDetailsCard = ({ friend }) => {
                         ))}</p>
 
                         <p className="text-gray-800 text-sm">{bio}</p>
-                        <p className="text-gray-600 text-sm">{email}</p>
+                        <p className="text-gray-600 text-sm ">{email}</p>
 
 
 
@@ -56,16 +56,16 @@ const FriendsDetailsCard = ({ friend }) => {
 
             <div className="right col-span-2 space-y-13 mt-20 md:mt-0">
                 <div className="grid grid-cols-3 gap-3">
-                    <div className="bg-base-100 shadow-sm p-5 text-center">
-                        <h2 className="font-bold text-green-950 text-2xl">{days_since_contact}</h2>
+                    <div className="bg-base-100 shadow-sm p-2 md:p-5 text-center">
+                        <h2 className="font-bold text-green-950 text-xl md:text-2xl">{days_since_contact}</h2>
                         <p>Days Since Contact</p>
                     </div>
-                    <div className="bg-base-100 shadow-sm p-5 text-center">
-                        <h2 className="font-bold text-green-950 text-2xl">{goal}</h2>
+                    <div className="bg-base-100 shadow-sm p-2 md:p-5 text-center">
+                        <h2 className="font-bold text-green-950 text-xl md:text-2xl">{goal}</h2>
                         <p>Goal(Days)</p>
                     </div>
-                    <div className="bg-base-100 shadow-sm p-5 text-center">
-                        <h2 className="font-bold text-green-950 text-2xl">{next_due_date}</h2>
+                    <div className="bg-base-100 shadow-sm p-2 md:p-5 text-center">
+                        <h2 className="font-bold text-green-950 text-xl md:text-2xl">{next_due_date}</h2>
                         <p>Next Due</p>
                     </div>
                 </div>
