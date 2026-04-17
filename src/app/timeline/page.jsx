@@ -5,6 +5,11 @@ import TimelineMessageCard from "@/components/TimelineMessageCard";
 import TimelineVideoCallCard from "@/components/TimelineVideoCallCard";
 import { useContext } from "react";
 
+// export const metadata = {
+//     title: 'Timeline',
+//     description: 'This is the timeline page'
+// };
+
 const TimelinePage = () => {
     const {callStatus, messageStatus, videoCallStatus, filteredTimeline, setFilter, filter} = useContext(FriendsContext);
     return (

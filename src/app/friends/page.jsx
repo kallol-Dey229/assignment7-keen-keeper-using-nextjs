@@ -1,6 +1,11 @@
 
 import FriendsCard from '../../components/FriendsCard';
 
+// export const metadata = {
+//     title: 'Friends',
+//     description: 'This is the friends page'
+// };
+
 const FriendsData = async () => {
     const res = await fetch('http://localhost:3000/friends.json');
     const friends = await res.json();
