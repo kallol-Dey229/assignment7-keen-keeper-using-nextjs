@@ -1,6 +1,11 @@
 
 import FriendsDetailsCard from "@/components/FriendsDetailsCard";
 
+export const metadata = {
+    title: 'Friends Details',
+    description: 'This is the friends details page'
+};
+
 
 const FriendsDetails = async ({ params }) => {
     const { friendId } = await params;

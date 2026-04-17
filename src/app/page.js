@@ -1,6 +1,11 @@
 import FriendsData from "@/app/friends/page";
 import { FaPlus } from "react-icons/fa";
 
+export const metadata = {
+    title: 'Home',
+    description: 'This is the home page'
+};
+
 export default async function Home() {
 
 
