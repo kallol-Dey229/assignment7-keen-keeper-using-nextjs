@@ -12,7 +12,7 @@ const FriendsDetailsCard = ({ friend }) => {
     const { handleCall, handleMessage, handleVideoCall } = useContext(FriendsContext);
     return (
         <div className="grid grid-cols-1 md:grid-cols-3 mt-20 gap-10 mx-5 md:mx-30 lg:mx-65 h-full">
-            <div className="space-y-2 col-span-1 left">
+            <div className="space-y-2 md:col-span-1 left">
                 <div className="card bg-base-100 shadow-sm">
                     <figure className="px-10 pt-10">
                         <Image
@@ -54,7 +54,7 @@ const FriendsDetailsCard = ({ friend }) => {
                 <p className="bg-base-100 shadow-sm p-2 flex items-center justify-center gap-1 font-bold text-red-500"><LuTrash /> Delete</p>
             </div>
 
-            <div className="right col-span-2 space-y-13 mt-20 md:mt-0">
+            <div className="right md:col-span-2 space-y-13 mt-20 md:mt-0">
                 <div className="grid grid-cols-3 gap-3">
                     <div className="bg-base-100 shadow-sm p-2 md:p-5 text-center">
                         <h2 className="font-bold text-green-950 text-xl md:text-2xl">{days_since_contact}</h2>
