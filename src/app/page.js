@@ -4,7 +4,7 @@ import { FaPlus } from "react-icons/fa";
 export default async function Home() {
 
 
-  const res = await fetch('http://localhost:3000/friends.json');
+  const res = await fetch('assignment7-keen-keeper-using-nextj.vercel.app/friends.json',{cache: 'no-store'});
   const friends = await res.json();
 
 
