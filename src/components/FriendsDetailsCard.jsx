@@ -6,7 +6,6 @@ import { MdOutlineTextsms } from 'react-icons/md';
 import { RiNotificationSnoozeLine } from 'react-icons/ri';
 import { FriendsContext } from './FriendsContext';
 
-
 const FriendsDetailsCard = ({ friend }) => {
     const { id, name, picture, days_since_contact, tags, status, bio, email, goal, next_due_date } = friend;
     const { handleCall, handleMessage, handleVideoCall } = useContext(FriendsContext);
